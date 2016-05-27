@@ -77,3 +77,9 @@ a = input()
 b = a.split(' ')
 c = '-'.join(b)
 print(c)
+
+#Mutations in a string(we can change the string)
+s = raw_input()
+i,c = raw_input().split()
+print(s[:int(i)] + c + s[int(i)+1:])
+
