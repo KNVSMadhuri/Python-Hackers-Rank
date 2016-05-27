@@ -115,6 +115,7 @@ for i in range(1,n+1):
 print(" ".join((s.capitalize() for s in input().strip().split(" "))))
     
 print(" ".join((s.capitalize() for s in input().strip().split(" "))))
+#Kevin vowels and consonants contest
 
 s = raw_input()
 
@@ -134,3 +135,6 @@ elif kevsc < stusc:
     print "Stuart", stusc
 else:
     print "Draw"
+#floyds triangle
+for i in range(1,int(input())): #More than 2 lines will result in 0 score. Do not leave a blank line also
+    print(sum(map(lambda x: i * 10**x, range(i))))
