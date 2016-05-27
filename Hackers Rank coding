@@ -71,3 +71,9 @@ for i in range(int(input())):
 a = raw_input()
 b = a.swapcase()
 print(b)
+
+#splitting and join the string
+a = input()
+b = a.split(' ')
+c = '-'.join(b)
+print(c)
