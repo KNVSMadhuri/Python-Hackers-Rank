@@ -99,3 +99,7 @@ print(any(c.isdigit() for c in str))
 print(any(c.islower() for c in str))
 print(any(c.isupper() for c in str))
 
+#textwrap
+import textwrap
+st,wid = input(),int(input())
+print(textwrap.fill(st,wid))
