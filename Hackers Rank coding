@@ -66,3 +66,8 @@ def parseString(s):
     return time.mktime(ts) - eval(tz)
 for i in range(int(input())):
     print(int(abs(parseString(input()) - parseString(input()))))
+    
+#Swaping Cases
+a = raw_input()
+b = a.swapcase()
+print(b)
