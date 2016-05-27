@@ -67,7 +67,7 @@ def parseString(s):
 for i in range(int(input())):
     print(int(abs(parseString(input()) - parseString(input()))))
     
-#Swaping Cases
+#Swaping Cases (Changing upper case to lowercase lowercase to uppercase)
 a = raw_input()
 b = a.swapcase()
 print(b)
