@@ -49,3 +49,9 @@ print(sum(s))
 A,B = raw_input(),set(map(int,raw_input().split()))
 C,D = raw_input(),set(map(int,raw_input().split()))
 print(len(B.union(D)))
+
+#Intersection
+
+A,B = input(),set(map(int,input().split()))
+C,D = input(),set(map(int,input().split()))
+print(len(B.intersection(D)))
