@@ -67,3 +67,10 @@ print(len(B.difference(D)))
 S = input() == 0 or set(input().split())
 [getattr(S, input().split()[0])(input().split()) for _ in range(int(input()))]
 print(sum(map(int, S)))
+
+#Captain Room Problem
+
+from collections import Counter
+K, a = raw_input(), Counter(map(int, raw_input().split()))
+co = [i for i in a.elements() if a[i]==1][0]
+print(co)
