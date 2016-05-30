@@ -55,3 +55,9 @@ print(len(B.union(D)))
 A,B = input(),set(map(int,input().split()))
 C,D = input(),set(map(int,input().split()))
 print(len(B.intersection(D)))
+
+#Difference
+
+A,B = input(),set(map(int,input().split()))
+C,D = input(),set(map(int,input().split()))
+print(len(B.difference(D)))
