@@ -27,3 +27,19 @@ for i in range(0,n):
 print(len(s))
 #Reading in sets without using s.add.
 print(len(set([str(input()) for x in range(int(input()))])))
+
+#N commands N inputs in sets
+n = int(input())
+s = set(map(int, input().split())) 
+cmds = int(input())
+
+for i in range(cmds):
+    line = input().split()
+    if line[0] == 'pop': 
+        s.pop()
+    if line[0] == 'remove':
+        s.remove(int(line[1]))
+    if line[0] == 'discard': 
+        s.discard(int(line[1]))
+
+print(sum(s))
