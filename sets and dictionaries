@@ -61,3 +61,9 @@ print(len(B.intersection(D)))
 A,B = input(),set(map(int,input().split()))
 C,D = input(),set(map(int,input().split()))
 print(len(B.difference(D)))
+
+#splitting a line into commands string
+
+S = input() == 0 or set(input().split())
+[getattr(S, input().split()[0])(input().split()) for _ in range(int(input()))]
+print(sum(map(int, S)))
