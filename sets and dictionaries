@@ -8,3 +8,14 @@ S = int(input())
 K = set(map(int,input().split()))
 average = sum(K)/float(len(K))
 print(average)
+
+#There is an array of  integers. There are also  disjoint sets,  and , each containing  integers. You like all the integers in set  and dislike all the integers in set . Your initial happiness is . For each  integer in the array, if , you add  to your happiness. If , you add  to your happiness. Otherwise, your happiness does not change. Output your final happiness at the end.
+
+Note: Since  and  are sets, they have no repeated elements. However, the array might contain duplicate elements.
+
+n,m = raw_input().split()
+arr = [int(x) for x in raw_input().split()]
+A = set([int(y) for y in raw_input().split()])
+B = set([int(z) for z in raw_input().split()])
+count = [0+1 if x in A else 0-1 if x in B else 0+0 for x in arr]
+print(sum(count))
