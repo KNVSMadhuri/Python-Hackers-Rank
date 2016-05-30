@@ -81,3 +81,13 @@ for i in range(int(raw_input())): #More than 4 lines will result in 0 score. Bla
     a = int(raw_input()); A = set(raw_input().split())
     b = int(raw_input()); B = set(raw_input().split())
     print(A.issubset(B))
+
+#Calculating superset:
+
+a = set(map(int, raw_input().split()))
+print(all(a > set(map(int, raw_input().split())) for i in range(int(raw_input()))))
+(OR)
+a = set(input().split())
+for _ in range(int(input())):
+    A = set(input().split())
+print(a.issuperset(A))
