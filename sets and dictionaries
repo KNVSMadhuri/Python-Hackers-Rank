@@ -74,3 +74,10 @@ from collections import Counter
 K, a = raw_input(), Counter(map(int, raw_input().split()))
 co = [i for i in a.elements() if a[i]==1][0]
 print(co)
+
+#Checking for the subset
+
+for i in range(int(raw_input())): #More than 4 lines will result in 0 score. Blank lines won't be counted.  
+    a = int(raw_input()); A = set(raw_input().split())
+    b = int(raw_input()); B = set(raw_input().split())
+    print(A.issubset(B))
