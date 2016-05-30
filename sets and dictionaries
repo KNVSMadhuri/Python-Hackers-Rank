@@ -1,0 +1,10 @@
+# In 3.5 calculating average 
+S = int(input())
+K = set(map(int,input().split()))
+average = sum(K)/len(K)
+print(average)
+# In 2.7 calculating average
+S = int(input())
+K = set(map(int,input().split()))
+average = sum(K)/float(len(K))
+print(average)
