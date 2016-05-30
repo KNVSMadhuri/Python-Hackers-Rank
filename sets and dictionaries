@@ -43,3 +43,9 @@ for i in range(cmds):
         s.discard(int(line[1]))
 
 print(sum(s))
+
+#union 
+
+A,B = raw_input(),set(map(int,raw_input().split()))
+C,D = raw_input(),set(map(int,raw_input().split()))
+print(len(B.union(D)))
