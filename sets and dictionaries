@@ -91,3 +91,15 @@ a = set(input().split())
 for _ in range(int(input())):
     A = set(input().split())
 print(a.issuperset(A))
+
+
+#Numpy arrays
+
+import numpy
+n, m = map(int, input().split())
+A = numpy.array([input().split() for _ in range(n)], int)
+B = numpy.array([input().split() for _ in range(n)], int)
+for o in (A+B, A-B, A*B, A/B, A%B, A**B):
+    print(o)
+
+
