@@ -6,5 +6,12 @@ import math
 eq = raw_input()
 pa = cmath.phase(complex(eq))
 r = abs(complex(eq))
-
 print ("{0}\n{1}".format(r,pa))
+
+#Finding angles
+
+import math
+AB = int(input())
+BC = int(input())
+print(str(int(round(math.degrees(math.atan2(AB,BC)))))+'°')
+
